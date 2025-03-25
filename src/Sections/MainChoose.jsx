@@ -17,45 +17,50 @@ const MainChoose = () => {
                 Почему выбирают нас?
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center relative z-10">
-        <div className="w-2/5 p-6 py-12 text-white flex flex-col items-center text-center">
-            <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
-                <img src="/Vector (8).svg" alt="Надежность" className="w-14 h-14 mb-4" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto relative z-10">
+                {/* Измененные карточки */}
+                <div className="w-full p-6 py-12 text-white flex flex-col items-center text-center">
+                    <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
+                        <img src="/Vector (8).svg" alt="Надежность" className="w-14 h-14" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Надежность и безопасность</h3>
+                    <p className="max-w-md">
+                        Мы используем современные технологии защиты данных и строгую проверку заемщиков, чтобы минимизировать риски для всех участников платформы.
+                    </p>
+                </div>
+
+                {/* Остальные карточки с аналогичными изменениями */}
+                <div className="w-full p-6 py-12 text-white flex flex-col items-center text-center">
+                    <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
+                        <img src="/Vector (9).svg" alt="Надежность" className="w-14 h-14" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Высокая доходность для инвесторов</h3>
+                    <p className="max-w-md">
+                        Получайте стабильный доход, инвестируя в проверенные займы. Средняя доходность на платформе составляет до 19% годовых.
+                    </p>
+                </div>
+
+                <div className="w-full p-6 py-12 text-white flex flex-col items-center text-center">
+                    <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
+                        <img src="/Vector (11).svg" alt="Надежность" className="w-14 h-14" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Простота и удобство</h3>
+                    <p className="max-w-md">
+                        Интуитивно понятный интерфейс делает работу с платформой максимально комфортной.
+                    </p>
+                </div>
+
+                <div className="w-full p-6 py-12 text-white flex flex-col items-center text-center">
+                    <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
+                        <img src="/Vector (12).svg" alt="Надежность" className="w-14 h-14" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">Удобные условия для заемщиков</h3>
+                    <p className="max-w-md">
+                        Быстрое одобрение заявок, низкие процентные ставки и гибкие условия погашения. Получите финансирование без лишних бюрократических процедур.
+                    </p>
+                </div>
             </div>
-          
-            <h3 className="text-2xl font-bold mb-3">Надежность и безопасность</h3>
-            <p>
-                Мы используем современные технологии защиты данных и строгую проверку заемщиков, чтобы минимизировать риски для всех участников платформы.
-            </p>
-        </div>
-        <div className="w-2/5 rounded-2xl p-6 py-12 text-white flex flex-col items-center text-center">
-            <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
-                <img src="/Vector (9).svg" alt="Надежность" className="w-14 h-14 mb-4" />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Высокая доходность для инвесторов</h3>
-            <p>
-                Получайте стабильный доход, инвестируя в проверенные займы. Средняя доходность на платформе составляет до 19% годовых.
-            </p>
-        </div>
-        <div className="w-2/5 rounded-2xl p-6 py-12 text-white flex flex-col items-center text-center">
-            <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
-                <img src="/Vector (11).svg" alt="Надежность" className="w-14 h-14 mb-4" />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Простота и удобство</h3>
-            <p>
-                Интуитивно понятный интерфейс делает работу с платформой максимально комфортной.
-            </p>
-        </div>
-        <div className="w-2/5 rounded-2xl p-6 py-12 text-white flex flex-col items-center text-center">
-        <div className="bg-white p-4 rounded-xl shadow-lg mb-4 w-28 h-28 flex items-center justify-center">
-                <img src="/Vector (12).svg" alt="Надежность" className="w-14 h-14 mb-4" />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Удобные условия для заемщиков</h3>
-            <p>
-                Быстрое одобрение заявок, низкие процентные ставки и гибкие условия погашения. Получите финансирование без лишних бюрократических процедур.
-            </p>
-        </div>
-      </div>
+
             <div className="flex justify-center mt-10 relative z-10">
                 <Link
                     to="/register"
@@ -65,7 +70,7 @@ const MainChoose = () => {
                 </Link>
             </div>
         </section>
-  );
+    );
 };
 
 export default MainChoose;

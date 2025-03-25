@@ -36,46 +36,50 @@ const slidesData = [
 
 const SwiperX = () => {
     return (
-      <section className="py-16 bg-gradient-to-b bg-[#070816] text-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Как это работает</h2>
-          <p className="text-lg text-gray-300 mb-12">
-            Тысячи инвесторов зарегистрированы на платформе MD Finance и ежедневно
-            инвестируют деньги в государственные контракты
-          </p>
-  
-          <Swiper
-            modules={[Navigation]}
-            navigation
-            slidesPerView={1}
-            spaceBetween={30}
-            loop="true"
-            breakpoints={{
-              1024: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            {slidesData.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-[#1c1c2c] p-6 rounded-2xl shadow-xl h-full flex flex-col justify-between">
-                  <div>
-                    <div className="text-2xl font-bold mb-4">{slide.step}</div>
-                    <p className="text-lg font-semibold mb-6">{slide.title}</p>
-                  </div>
-                  <img
-                    src={slide.img}
-                    alt={slide.title}
-                    className="mx-auto mt-auto"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
+        <section className="py-16 bg-gradient-to-b bg-[#070816] text-white">
+            <div className="max-w-6xl mx-auto px-4">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4">Как это работает</h2>
+                <p className="text-lg text-gray-300 mb-12">
+                    Тысячи инвесторов зарегистрированы на платформе MD Finance и ежедневно
+                    инвестируют деньги в государственные контракты
+                </p>
+
+                <Swiper
+                    modules={[Navigation]}
+                    navigation
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    loop="true"
+                    breakpoints={{
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
+                    {slidesData.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="bg-[#1c1c2c] p-6 rounded-2xl shadow-xl h-full flex flex-col justify-between">
+                                <div>
+                                    <div className="text-2xl font-bold mb-4">{slide.step}</div>
+                                    <p className="text-lg font-semibold mb-6">{slide.title}</p>
+                                </div>
+                                {/* Добавлен контейнер с свечением */}
+                                <div className="mt-auto relative mx-auto">
+                                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-32 h-32 bg-[#D20764] rounded-full blur-3xl opacity-70 z-0"></div>
+                                    <img
+                                        src={slide.img}
+                                        alt={slide.title}
+                                        className="relative z-10 mx-auto"
+                                    />
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </section>
     );
 };
-  
-  export default SwiperX;
-  
+
+export default SwiperX;

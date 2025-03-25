@@ -69,9 +69,12 @@ const Calculator = () => {
 
   return (
       <section className="w-full flex justify-center items-center px-4 py-80 bg-[#070816] relative">
-        <div className="bg-[#1a1a2f] rounded-2xl px-6 py-10 text-center w-full max-w-7xl">
-
-
+        <div className="bg-[#1a1a2f] rounded-2xl px-6 py-10 text-center w-full max-w-7xl relative z-10">
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                w-3/4 h-[150%] bg-[#D20764] rounded-full blur-[200px] opacity-20">
+            </div>
+          </div>
           {/* Слайдеры */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-6">
             <div>

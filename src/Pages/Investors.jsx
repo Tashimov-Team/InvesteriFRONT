@@ -18,7 +18,6 @@ const Investors = () => {
         <StatisticsBlock />
         <Empty />
         <Text />
-        {/* <About /> */}
         <Investment />
         <Adventages />
         <Fifth />
