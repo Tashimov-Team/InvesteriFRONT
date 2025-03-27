@@ -5,6 +5,8 @@ import SwiperX from '../Sections/SwiperX'
 import HelpSection from '../Sections/HelpSection'
 import Calculator from '../Sections/Calculator'
 import Empty from '../Sections/Empty'
+import RequestResetCode from '../Sections/CheckMail'
+import ResetPassword from '../Sections/ResetPassword'
 
 const Zaem = () => {
   return (
@@ -16,6 +18,8 @@ const Zaem = () => {
         <HelpSection />
         <Calculator />
         <Empty />
+        <RequestResetCode />
+        <ResetPassword />
     </>
   )
 }

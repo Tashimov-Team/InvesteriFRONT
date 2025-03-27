@@ -7,6 +7,7 @@ import Zaem from './Pages/Zaem'
 import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Profile from './Pages/Profile';
+import ZaemProfile from './Pages/ZaemProfile'
 import MainLayout from "./Layouts/MainLayout";
 import CleanLayout from "./Layouts/CleanLayout";
 import {AuthProvider} from "./context/AuthContext.jsx";
@@ -34,6 +35,7 @@ function App() {
                   <Profile />
                 </ProtectedRoute>
             } />
+            <Route path="/myzaemprofile" element={<ZaemProfile />} />
           </Route>
         </Routes>
       </AuthProvider>
